@@ -1,2 +1,8 @@
 # A-B-Testing-For-Landing-Page
-The objective of this project is to evaluate whether a new landing page can achieve a significantly higher conversion rate compared to the current page design.
+This project is an A/B test designed to evaluate whether a new landing page design leads to higher conversion rates compared to the existing design. The hypothesis being tested is that the conversion rates for the old and new pages are the same (H0), while the alternative hypothesis suggests a difference in conversion rates (H1). The participants are users visiting the website's landing page, and the key metric for success is the conversion rate, defined as the percentage of visitors who completed a desired action (e.g., a purchase or sign-up).
+
+The project uses Python and several major tools, including Pandas for data manipulation, Seaborn and Matplotlib for visualization, and Statsmodels for statistical analysis, including performing a Z-test for comparing conversion rates between the control (old page) and treatment (new page) groups. The dataset is loaded from Google Drive using Google Colab, and it contains information on users, timestamps, group assignments (control vs. treatment), landing page types, and whether users converted or not.
+
+To run the project, the dataset is loaded, cleaned by checking for duplicates and null values, and explored through descriptive statistics. Conversion rates are calculated for both groups, and a Z-test is performed to determine whether the difference in conversion rates is statistically significant. The results show a p-value of 0.2161, indicating insufficient evidence to reject the null hypothesis. Thus, there is no statistically significant difference in conversion rates between the two page designs.
+
+In summary, this project demonstrates how to set up and analyze an A/B test, with the final conclusion that the new landing page design did not significantly improve conversion rates compared to the old design.
